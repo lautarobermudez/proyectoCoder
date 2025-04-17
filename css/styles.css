@@ -1,3 +1,10 @@
+/* 
+ * Estilos básicos para el sitio web de Psicología Clínica
+ * Autor: [Tu Nombre]
+ * Fecha: Abril 2025
+ * Descripción: Hoja de estilos completa para el proyecto de Psicología Clínica
+ */
+
 /* ---------- ESTILOS GENERALES ---------- */
 /* Reseteo básico */
 * {
@@ -37,11 +44,13 @@ h2 {
     font-size: 2rem;
     color: #3498db;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 1.5rem;
     color: #2980b9;
+    margin-bottom: 15px;
 }
 
 /* Párrafos */
@@ -114,6 +123,12 @@ header nav {
 
 .menu a:hover {
     color: #3498db;
+    text-decoration: none;
+}
+
+.menu a[aria-current="page"] {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
 }
 
 /* Botón de menú móvil - visible solo en versión móvil */
@@ -190,9 +205,21 @@ header nav {
     border: 2px solid #fff;
 }
 
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
 .btn:hover {
     opacity: 0.9;
     text-decoration: none;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background-color: #3498db;
+    color: #fff;
 }
 
 /* ---------- SERVICIOS DESTACADOS ---------- */
@@ -250,6 +277,7 @@ blockquote {
 
 blockquote p {
     text-align: center;
+    color: #fff;
 }
 
 cite {
@@ -260,9 +288,246 @@ cite {
     color: #3498db;
 }
 
-/* ---------- ESTILOS DEL BLOG ---------- */
+/* ---------- PÁGINA BANNER ---------- */
+.page-banner {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-banner h1 {
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- SOBRE MÍ ---------- */
+.about {
+    padding: 0 0 60px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.bio {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+/* Credenciales */
+.credentials {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.credentials-list {
+    list-style: none;
+    margin: 40px 0;
+}
+
+.credentials-list li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.credential-year {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 700;
+    color: #3498db;
+    font-size: 1.2rem;
+    vertical-align: top;
+}
+
+.credential-info {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.credential-info h3 {
+    margin-bottom: 5px;
+}
+
+/* Enfoque terapéutico */
+.approach-items {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.approach-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.approach-item h3 {
+    color: #3498db;
+}
+
+.cta-box {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ---------- SERVICIOS DETALLADOS ---------- */
+.services {
+    padding: 0 0 60px 0;
+    background-color: #fff;
+}
+
+.services-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.services-list {
+    margin-top: 40px;
+}
+
+.service-item {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.service-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.service-icon img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.service-item h2 {
+    margin-bottom: 20px;
+}
+
+.service-item > p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.service-details {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service-details h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.service-details ul {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.service-details li {
+    margin-bottom: 10px;
+}
+
+.service-info {
+    background-color: #edf7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #3498db;
+}
+
+.service-info p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el acordeón */
+.faq-section {
+    margin: 60px 0;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+}
+
+.services-cta {
+    margin-top: 60px;
+}
+
+/* ---------- BLOG ---------- */
 .blog {
-    padding: 60px 0;
+    padding: 0 0 60px 0;
     background-color: #fff;
 }
 
@@ -272,20 +537,65 @@ cite {
     text-align: center;
 }
 
+/* Categorías de blog */
+.blog-categories {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-filter {
+    list-style: none;
+}
+
+.category-filter li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.category-filter a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    color: #333;
+}
+
+.category-filter .active, .category-filter a:hover {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Grid de blog */
+.blog-grid {
+    text-align: center;
+}
+
 .blog-card {
-    margin-bottom: 30px;
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2%;
     background-color: #f9f9f9;
     border-radius: 8px;
     overflow: hidden;
+    vertical-align: top;
+    text-align: left;
+}
+
+.blog-image {
+    position: relative;
 }
 
 .blog-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    object-fit: cover;
 }
 
 .blog-category {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     background-color: #3498db;
     color: #fff;
     padding: 5px 10px;
@@ -299,6 +609,12 @@ cite {
     padding: 20px;
 }
 
+.blog-content h2 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .blog-meta {
     font-size: 0.9rem;
     color: #777;
@@ -309,6 +625,7 @@ cite {
     margin-left: 15px;
 }
 
+/* Paginación */
 .pagination {
     text-align: center;
     margin: 40px 0;
@@ -336,107 +653,84 @@ cite {
     color: #fff;
 }
 
-/* ---------- SOBRE MÍ ---------- */
-.about {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.profile-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid #3498db;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-figcaption {
+/* Sección de YouTube */
+.youtube-section {
+    margin: 60px 0;
     text-align: center;
-    font-style: italic;
-    color: #777;
-    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
 }
 
-.bio p {
-    margin-bottom: 20px;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 30px 0;
 }
 
-.credentials-list {
-    list-style: none;
-    margin: 40px 0;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.credential-year {
-    font-weight: 700;
-    color: #3498db;
-    font-size: 1.2rem;
-    margin-right: 15px;
-}
-
-.approach-item {
-    margin-bottom: 30px;
-}
-
-.cta-box {
-    background-color: #f1f1f1;
+/* Sección de newsletter */
+.newsletter-section {
+    background-color: #edf7ff;
     padding: 40px;
     border-radius: 8px;
     text-align: center;
     margin: 40px 0;
+    border-left: 4px solid #3498db;
 }
 
-/* ---------- SERVICIOS ---------- */
-.service-item {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.service-icon img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-.service-details {
-    margin-top: 20px;
-}
-
-.service-details ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.service-info {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-/* Estilos para el acordeón */
-.accordion-header {
-    background-color: #f1f1f1;
-    padding: 15px;
-    cursor: pointer;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    font-size: 1.1rem;
-}
-
-.accordion-content {
-    padding: 15px;
-    background-color: #f9f9f9;
-    margin-bottom: 15px;
-    border-radius: 0 0 4px 4px;
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* ---------- CONTACTO ---------- */
+.contact {
+    padding: 0 0 60px 0;
+    background-color: #fff;
+}
+
+.contact-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+/* Formulario de contacto */
 .contact-form {
-    margin: 40px 0;
+    display: inline-block;
+    width: 48%;
+    margin-right: 3%;
+    vertical-align: top;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 .form-group {
@@ -459,6 +753,11 @@ label {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
 }
 
 textarea.form-control {
@@ -499,20 +798,57 @@ textarea.form-control {
     margin-right: 10px;
 }
 
+.form-help {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Mapa y contacto */
 .map-container {
-    margin: 40px 0;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.map-container h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
 }
 
 iframe {
     width: 100%;
     border: none;
+    border-radius: 8px;
 }
 
 .contact-info {
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
+}
+
+.contact-info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* FAQ de contacto */
+.contact-faq {
+    margin-top: 60px;
+    clear: both;
 }
 
 /* ---------- FOOTER ---------- */
@@ -596,79 +932,13 @@ footer {
     border: 0;
 }
 
-/* Estilos para banner de página */
-.page-banner {
-    background-color: #3498db;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.page-banner h1 {
-    color: #fff;
-    margin: 0;
-}
-
-/* Estilos para categorías de blog */
-.blog-categories {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.category-filter {
-    list-style: none;
-}
-
-.category-filter li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.category-filter a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-    color: #333;
-}
-
-.category-filter .active {
-    background-color: #3498db;
-    color: #fff;
-}
-
-/* Estilos para sección de video */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin: 30px 0;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos para sección de newsletter */
-.newsletter-section {
-    background-color: #f1f1f1;
-    padding: 40px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.newsletter-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
+/* Estilos para formulario de privacidad */
 .form-privacy {
     margin-top: 10px;
     text-align: left;
+}
+
+.form-privacy label {
+    display: inline;
+    font-weight: normal;
 }
