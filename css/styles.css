@@ -1,0 +1,674 @@
+/* ---------- ESTILOS GENERALES ---------- */
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos base del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para contenedores principales */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ---------- TIPOGRAFÍA ---------- */
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3498db;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+/* Logo a la izquierda */
+.logo {
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.logo-img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Menú de navegación */
+header nav {
+    display: inline-block;
+    width: 75%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+/* Botón de menú móvil - visible solo en versión móvil */
+.menu-toggle {
+    display: none;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 100px 0;
+    background-color: rgba(44, 62, 80, 0.7);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(44, 62, 80, 0.7);
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Botones de llamada a la acción */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+/* ---------- SERVICIOS DESTACADOS ---------- */
+.featured-services {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-grid {
+    text-align: center;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.service-img {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.btn-text {
+    color: #3498db;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* ---------- SECCIÓN DE TESTIMONIOS ---------- */
+.testimonial-section {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+blockquote p {
+    text-align: center;
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #3498db;
+}
+
+/* ---------- ESTILOS DEL BLOG ---------- */
+.blog {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.blog-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.blog-card {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-category {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.read-time {
+    margin-left: 15px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    color: #333;
+}
+
+.pagination .active a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* ---------- SOBRE MÍ ---------- */
+.about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+.credentials-list {
+    list-style: none;
+    margin: 40px 0;
+}
+
+.credential-year {
+    font-weight: 700;
+    color: #3498db;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.approach-item {
+    margin-bottom: 30px;
+}
+
+.cta-box {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ---------- SERVICIOS ---------- */
+.service-item {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.service-icon img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.service-details {
+    margin-top: 20px;
+}
+
+.service-details ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.service-info {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Estilos para el acordeón */
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+}
+
+/* ---------- CONTACTO ---------- */
+.contact-form {
+    margin: 40px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    min-height: 150px;
+}
+
+.form-text {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.form-message {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: none; /* Se mostrará con JavaScript */
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.map-container {
+    margin: 40px 0;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+.contact-info {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.footer-column {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.footer-column p, .footer-column address {
+    color: #bdc3c7;
+}
+
+.footer-column a {
+    color: #3498db;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* ---------- UTILIDADES ---------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Estilos para banner de página */
+.page-banner {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Estilos para categorías de blog */
+.blog-categories {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-filter {
+    list-style: none;
+}
+
+.category-filter li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.category-filter a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    color: #333;
+}
+
+.category-filter .active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilos para sección de video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para sección de newsletter */
+.newsletter-section {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-privacy {
+    margin-top: 10px;
+    text-align: left;
+}
